@@ -1,0 +1,22 @@
+@each $key, $value in $colors {
+  .bg-#{$key} {
+    background-color: $value;
+  }
+}
+
+.bg {
+  &--welcome {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    transform: translateY(15%);
+    right: 2rem;
+    @extend .w-40;
+  }
+}
+
+@include mq(lg) {
+}
+
+@include mq(xl) {
+}

@@ -1,0 +1,111 @@
+//--------------------
+// SCSS VARIABLES
+//--------------------
+
+// Grid breakpoints
+
+$breakpoints: (
+  sm: 640px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px,
+);
+
+$container-max-width: 1440px;
+
+// z-index
+$z-layers: (
+  'modal': 999,
+  'nav': 100,
+  'content-overlay': 30,
+);
+
+// Colors
+$black: #1c1c1c;
+$white: #fff;
+$red: #ff462d;
+
+$grey-mid: #979797;
+$grey-light: #bcbcbc;
+$grey-lighter: #ececec;
+
+$teal: #2088a8;
+$teal-accent: #21bfca;
+$teal-light: #c5dadc;
+$teal-ligher: #eff8f9;
+
+$colors: (
+  'black': $black,
+  'white': $white,
+  'red': $red,
+  'grey-mid': $grey-mid,
+  'grey-light': $grey-light,
+  'grey-lighter': $grey-lighter,
+  'teal': $teal,
+  'teal-accent': $teal-accent,
+  'teal-light': $teal-light,
+  'teal-lighter': $teal-light,
+);
+
+$focus-color: $teal-accent;
+
+// Typography
+$font-roboto: 'Roboto', sans-serif;
+$font-poppins: 'Poppins', sans-serif;
+
+$font-size-root: 100%;
+$font-size-base: 1rem;
+$line-height: 1.5;
+
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+
+// Transition
+$transition_time_fast: 300ms;
+$transition_time: 500ms;
+$transition_time_slow: 1s;
+
+// Default easing curves, Transitions, etc
+$easing-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1);
+$easing-linear-out-slow-in: cubic-bezier(0, 0, 0.2, 1);
+$easing-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1);
+$easing-curve-default: $easing-fast-out-slow-in;
+
+// Misc
+$baseSpace: 1rem;
+
+$spacing: (
+  0: 0,
+  1: calc($baseSpace / 4),
+  2: calc($baseSpace / 3),
+  3: calc($baseSpace / 2),
+  4: $baseSpace,
+  5: calc($baseSpace * 1.25),
+  6: calc($baseSpace * 1.5),
+  7: calc($baseSpace * 1.75),
+  8: calc($baseSpace * 2),
+  10: calc($baseSpace * 2.5),
+  12: calc($baseSpace * 3),
+  14: calc($baseSpace * 3.5),
+  16: calc($baseSpace * 4),
+  18: calc($baseSpace * 4.5),
+  20: calc($baseSpace * 5),
+);
+
+$dimensions: (
+  100: 100%,
+  50: 50%,
+  40: 40%,
+  25: 25%,
+);
+
+$elevations: (
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+);

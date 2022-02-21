@@ -1,0 +1,27 @@
+// =================
+// DEFAULT 
+// =================
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+// =================
+// LAZY
+// =================
+
+.lazyload,
+.lazyloading {
+	opacity: 0;
+}
+.lazyloaded {
+	opacity: 1;
+	transition: opacity 300ms;
+}
+
+//prevent error
+img.lazyload:not([src]) {
+	visibility: hidden;
+}

@@ -1,0 +1,21 @@
+{
+    "restaurant": {
+        "name": "Oishii"
+    },
+    "welcome" : {
+        "Messagge": "Welcome to",
+        "table": "Table 5",
+        "backgroundImage": "./assets/images/welcome-bg.png"
+    },
+    "search": {
+        "heading": "See our <span>menu</span><br />and place <span>your order</span>",
+        "inputLabel": "Search dishes by ingredients or category",
+        "inputPlaceholder": "es. Pollo, salmone, Pasta, Vegan, Seafood.."
+    },
+    "cart": {
+        "buttonLabel": "Your order"
+    },
+    "category": {
+        "heading": "Dishes by category"
+    }
+}

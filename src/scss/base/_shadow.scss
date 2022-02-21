@@ -1,0 +1,5 @@
+@each $key, $value in $elevations {
+  .elevate-#{$key} {
+    @include shadow($value, $grey-mid);
+  }
+}

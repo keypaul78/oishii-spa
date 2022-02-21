@@ -1,0 +1,37 @@
+.row {
+  margin: 0 auto;
+  width: 100%;
+  @extend .d-flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.col,
+.col-12,
+.col-6 {
+  @extend .d-block;
+  padding: 1rem;
+}
+
+.col,
+.col-12 {
+  flex-basis: 100%;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.col-6 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.order-md-1 {
+  order: 1;
+}
+.order-md-2 {
+  order: 2;
+}
+
+@include mq(md) {
+}

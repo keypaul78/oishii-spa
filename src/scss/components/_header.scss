@@ -1,0 +1,22 @@
+.header {
+  position: relative;
+  z-index: 1;
+  &__sx,
+  &__dx {
+    width: auto;
+    flex-shrink: 0;
+  }
+  &__cx {
+    flex-grow: 1;
+  }
+
+  &__sx {
+    @extend .d-flex;
+    @extend .items-end;
+    h3 {
+      @extend .mb-0;
+      @extend .ml-3;
+      @extend .ff-roboto;
+    }
+  }
+}

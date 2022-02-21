@@ -1,0 +1,66 @@
+input,
+.input,
+textarea,
+select,
+label {
+  @extend .fw-regular;
+  @extend .ff-roboto;
+  @extend .mb-1;
+  @extend .bg-white;
+  box-sizing: border-box;
+  font-size: toRem(16);
+  line-height: 1.5;
+}
+
+input,
+textarea,
+select {
+  border: 2px solid $grey-light;
+  border-radius: toRem(8);
+  transition: border-color $transition_time_fast $easing-curve-default;
+
+  &:focus {
+    border-color: $teal;
+    @extend .elevate-4;
+  }
+
+  ::placeholder {
+    color: $grey-mid;
+  }
+}
+
+.input {
+  &--search {
+    + .icon {
+      opacity: 0.5;
+      transition: opacity $transition_time_fast $easing-curve-default;
+    }
+
+    &:focus {
+      + .icon {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+input[type='text'] {
+  padding: toRem(12) toRem(24);
+}
+
+.input--group {
+  @extend .d-block;
+  position: relative;
+  .icon {
+    position: absolute;
+    right: toRem(16);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@include mq(lg) {
+}
+
+@include mq(xl) {
+}

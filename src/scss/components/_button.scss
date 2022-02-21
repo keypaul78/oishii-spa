@@ -1,0 +1,59 @@
+button,
+.button {
+  @extend .text-grey-mid;
+  @extend .ff-poppins;
+  @extend .fw-medium;
+  display: inline-flex;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+
+  &--cart {
+    @extend .text-uppercase;
+    @extend .d-flex;
+    @extend .items-center;
+
+    &__amount {
+      @extend .text-center;
+      @extend .d-inline-block;
+      @extend .text-white;
+      @extend .ml-6;
+      position: relative;
+      border-radius: 50%;
+      width: toRem(48);
+      height: toRem(48);
+      line-height: toRem(48);
+      &::before,
+      &::after {
+        position: absolute;
+      }
+      &::before {
+        @extend .bg-white;
+        @extend .elevate-1;
+        @include abs-centered;
+        border-radius: 50%;
+        display: block;
+        content: '';
+        width: toRem(72);
+        height: toRem(72);
+        z-index: 0;
+      }
+      &::after {
+        @extend .bg-black;
+        @include abs-centered;
+        border-radius: 50%;
+        display: block;
+        content: '';
+        width: toRem(48);
+        height: toRem(48);
+        z-index: 0;
+      }
+      span {
+        display: block;
+        height: 100%;
+        position: relative;
+        color: white;
+        z-index: 1;
+      }
+    }
+  }
+}

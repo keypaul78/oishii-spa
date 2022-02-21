@@ -1,0 +1,13 @@
+.icon {
+  display: inline-block;
+  width: toRem(16);
+  height: toRem(16);
+
+  &--24 {
+    width: toRem(24);
+    height: toRem(24);
+  }
+}
+
+@include mq(md) {
+}
