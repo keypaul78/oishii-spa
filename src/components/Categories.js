@@ -20,10 +20,9 @@ class Categories extends React.Component {
         <div className="row">
           <div className="col-12">
             <h4>{fields.category.heading}</h4>
+            <CategoriesList categories={this.state.categories} />
           </div>
         </div>
-
-        <CategoriesList categories={this.state.categories} />
       </div>
     );
   }

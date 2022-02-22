@@ -1,19 +1,50 @@
 .card {
-  position: relative;
   border-radius: $borderRadiusCard;
+  overflow: hidden;
   @extend .elevate-1;
 
+  &__content {
+    position: relative;
+  }
+
   &--category {
-    @extend .bg-black;
-    width: 200px;
-    grid-row-end: auto;
-    h5 {
-      position: absolute;
-      bottom: 0.5rem;
-      left: 1rem;
-      @extend .text-white;
-      @extend .m-0;
-      @extend .fw-semibold;
+    background: black;
+    width: 100%;
+    .card__content {
+      aspect-ratio: 1;
+      @extend .bg-black;
+      h5 {
+        position: absolute;
+        z-index: 2;
+        bottom: 0.5rem;
+        left: 1rem;
+        letter-spacing: 0.5px;
+        @extend .text-white;
+        @extend .m-0;
+        @extend .fw-semibold;
+      }
+      img {
+        position: absolute;
+        z-index: 1;
+        width: auto;
+        max-width: none;
+        height: 100%;
+      }
+      &::after {
+        content: '';
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        height: 4rem;
+        bottom: 0;
+        left: 0;
+        opacity: 0.6;
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+      }
     }
   }
 }
