@@ -26,11 +26,13 @@
 @import 'base/form';
 @import 'base/icon';
 @import 'base/shadow';
+@import 'base/list';
 
 //--------------------
 // COMPONENTS
 //--------------------
 
 @import 'components/button';
-@import 'components/header';
+@import 'components/card';
+@import 'components/jumbotron';
 @import 'components/welcome';

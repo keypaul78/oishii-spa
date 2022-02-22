@@ -9,8 +9,8 @@
     },
     "search": {
         "heading": "See our <span>menu</span><br />and place <span>your order</span>",
-        "inputLabel": "Search dishes by ingredients or category",
-        "inputPlaceholder": "es. Pollo, salmone, Pasta, Vegan, Seafood.."
+        "inputLabel": "Search dishes by ingredients",
+        "inputPlaceholder": "es. Rice, Chicken, tomato, banana..."
     },
     "cart": {
         "buttonLabel": "Your order"

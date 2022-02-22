@@ -2,10 +2,10 @@
 import React from 'react';
 import parse from 'html-react-parser';
 //comps
-import Label from '../componets/Label';
-import Input from '../componets/Input';
-import Icon from '../componets/Icon';
-import InputGroup from '../componets/InputGroup';
+import Label from './Label';
+import Input from './Input';
+import Icon from './Icon';
+import InputGroup from './InputGroup';
 //styles
 //data
 import fields from '../data/content.json';

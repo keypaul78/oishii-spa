@@ -1,0 +1,19 @@
+.card {
+  position: relative;
+  border-radius: $borderRadiusCard;
+  @extend .elevate-1;
+
+  &--category {
+    @extend .bg-black;
+    width: 200px;
+    grid-row-end: auto;
+    h5 {
+      position: absolute;
+      bottom: 0.5rem;
+      left: 1rem;
+      @extend .text-white;
+      @extend .m-0;
+      @extend .fw-semibold;
+    }
+  }
+}
