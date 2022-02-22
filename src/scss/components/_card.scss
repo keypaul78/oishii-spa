@@ -46,5 +46,75 @@
         );
       }
     }
+    &--beef {
+      .card__content {
+        background-color: #d55d49;
+      }
+    }
+    &--chicken {
+      .card__content {
+        background-color: #cfa616;
+      }
+    }
+    &--dessert {
+      .card__content {
+        background-color: #608456;
+      }
+    }
+    &--lamb {
+      .card__content {
+        background-color: #16cf8d;
+      }
+    }
+    &--miscellaneous {
+      .card__content {
+        background-color: #499ad5;
+      }
+    }
+    &--pasta {
+      .card__content {
+        background-color: #b949d5;
+      }
+    }
+    &--pork {
+      .card__content {
+        background-color: #16b9cf;
+      }
+    }
+    &--seafood {
+      .card__content {
+        background-color: #7d5687;
+      }
+    }
+    &--side {
+      .card__content {
+        background-color: #684f1f;
+      }
+    }
+    &--starter {
+      .card__content {
+        background-color: #d54949;
+      }
+    }
+    &--vegan {
+      .card__content {
+        background-color: #8c6ac4;
+      }
+    }
+    &--vegetarian {
+      .card__content {
+        background-color: #e8d957;
+      }
+    }
+    &--breakfast {
+      .card__content {
+        background-color: #2516cf;
+      }
+    }
+    &--goat {
+      .card__content {
+        background-color: #8fd549;
+      }
+    }
   }
 }

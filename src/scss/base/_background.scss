@@ -9,14 +9,16 @@
     position: absolute;
     z-index: 0;
     bottom: 0;
-    transform: translateY(15%);
-    right: 2rem;
-    @extend .w-40;
+    right: 0;
+    transform: translateX(27%) translateY(-15%);
+    width: 60%;
+
+    @include mq(sm) {
+      width: 40%;
+      max-width: 450px;
+      transform: translateY(15%);
+      bottom: 0;
+      right: 2rem;
+    }
   }
-}
-
-@include mq(lg) {
-}
-
-@include mq(xl) {
 }

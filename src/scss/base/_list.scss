@@ -2,9 +2,17 @@
   @extend .mt-5;
   &--categories {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     grid-auto-rows: auto;
+
+    @include mq(sm) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include mq(md) {
+      grid-template-columns: repeat(4, 1fr);
+    }
 
     @include mq(lg) {
       grid-template-columns: repeat(5, 1fr);

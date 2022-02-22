@@ -1,6 +1,5 @@
 # Oishii - TO DO
 
-- Style category card (last style , add custom color to each category)
 - Click cateogry card
 
 - List view of selected category

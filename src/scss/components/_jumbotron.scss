@@ -12,11 +12,21 @@
 
   &__sx {
     @extend .d-flex;
+    @extend .flex-wrap;
     @extend .items-end;
+    width: 60%;
     h3 {
       @extend .mb-0;
-      @extend .ml-3;
       @extend .ff-roboto;
+    }
+  }
+
+  @include mq(md) {
+    &__sx {
+      width: auto;
+      h3 {
+        margin-left: 0.5rem;
+      }
     }
   }
 }
