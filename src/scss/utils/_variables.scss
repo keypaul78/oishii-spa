@@ -33,7 +33,7 @@ $grey-lighter: #ececec;
 $teal: #2088a8;
 $teal-accent: #21bfca;
 $teal-light: #c5dadc;
-$teal-ligher: #eff8f9;
+$teal-lighter: #eff8f9;
 
 $colors: (
   'black': $black,
@@ -45,7 +45,7 @@ $colors: (
   'teal': $teal,
   'teal-accent': $teal-accent,
   'teal-light': $teal-light,
-  'teal-lighter': $teal-light,
+  'teal-lighter': $teal-lighter,
 );
 
 $focus-color: $teal-accent;
@@ -97,6 +97,7 @@ $spacing: (
 
 $dimensions: (
   100: 100%,
+  75: 75%,
   50: 50%,
   40: 40%,
   25: 25%,
@@ -111,3 +112,4 @@ $elevations: (
 );
 
 $borderRadiusCard: 0.5rem;
+$borderRadiusChips: 1rem;

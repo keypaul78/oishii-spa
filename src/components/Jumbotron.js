@@ -3,14 +3,14 @@ import React from 'react';
 //compo
 import Logo from './Logo';
 import CartButton from './CartButton';
-import Image from './Image';
 import Welcome from './Welcome';
+import Categories from './Categories';
 //data
 import fields from '../data/content.json';
 
 const Jumbotron = () => {
   return (
-    <div className="container pb-5 elevate-2">
+    <div className="container pb-5 elevate-2 jumbotron">
       <div className="row">
         <div className="col-12">
           <div className="header d-flex">
@@ -20,7 +20,9 @@ const Jumbotron = () => {
                 {fields.welcome.Messagge} <span>{fields.welcome.table}</span>
               </h3>
             </div>
-            <div className="header__cx"></div>
+            <div className="header__cx">
+              <Welcome mode="simple" />
+            </div>
             <div className="header__dx">
               <CartButton />
             </div>
@@ -28,14 +30,16 @@ const Jumbotron = () => {
         </div>
       </div>
 
-      <div className="row">
+      <Categories mode="chips" />
+
+      <div className="row welcome--message">
         <div className="col-6">
-          <Welcome />
+          <Welcome mode="large" />
         </div>
       </div>
 
       <div className="bg bg--welcome">
-        <Image
+        <img
           src={fields.welcome.backgroundImage}
           alt={fields.restaurant.name}
         />

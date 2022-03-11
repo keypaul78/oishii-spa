@@ -1,0 +1,24 @@
+.chips {
+  border-radius: $borderRadiusChips;
+  overflow: hidden;
+  text-decoration: none;
+  padding: 0 16px;
+  line-height: 2rem;
+  @extend .fw-medium;
+  @extend .bg-teal-lighter;
+  transition: background-color 400ms $easing-fast-out-slow-in;
+
+  span {
+    @extend .text-black;
+    opacity: 0.6;
+    transition: opacity 400ms $easing-fast-out-slow-in;
+  }
+
+  &.active {
+    @extend .bg-black;
+    span {
+      opacity: 1;
+      @extend .text-white;
+    }
+  }
+}

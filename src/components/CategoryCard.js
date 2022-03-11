@@ -1,24 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Image from './Image';
 
 class CategoryCard extends React.Component {
   state = { categoryName: '' };
 
-  onClickCategory = (catName) => {
-    console.log(catName);
-  };
-
   render() {
     const { strCategory, strCategoryThumb } = this.props.category;
     return (
-      <div
-        onClick={() => this.onClickCategory(strCategory)}
-        className={`card card--category card--category--${strCategory.toLowerCase()}`}
-      >
-        <div className="card__content">
-          <h5>{strCategory}</h5>
-          <img src={strCategoryThumb} alt={strCategory} />
+      <Link to={`/category/${strCategory}`}>
+        <div
+          className={`card card--category card--category--${strCategory.toLowerCase()} `}
+        >
+          <div className="card__content">
+            <h5>{strCategory}</h5>
+            <Image src={strCategoryThumb} alt={strCategory} />
+          </div>
         </div>
-      </div>
+      </Link>
     );
   }
 }

@@ -11,7 +11,14 @@ class Image extends React.Component {
   }
 
   render() {
-    return <img src={this.props.src} alt={this.props.alt} />;
+    return (
+      <img
+        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-src={this.props.src}
+        alt={this.props.alt}
+        className="lazy"
+      />
+    );
   }
 }
 

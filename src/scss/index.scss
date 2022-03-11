@@ -27,6 +27,7 @@
 @import 'base/icon';
 @import 'base/shadow';
 @import 'base/list';
+@import 'base/transition';
 
 //--------------------
 // COMPONENTS
@@ -34,5 +35,6 @@
 
 @import 'components/button';
 @import 'components/card';
+@import 'components/chips';
 @import 'components/jumbotron';
 @import 'components/welcome';

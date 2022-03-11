@@ -64,7 +64,7 @@ button,
       }
     }
 
-    @include mq(md) {
+    @include mq(lg) {
       strong {
         display: inline;
       }

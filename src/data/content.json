@@ -1,4 +1,5 @@
 {
+    "basePath" : "/__stage/oishii-app",
     "restaurant": {
         "name": "Oishii"
     },
@@ -10,7 +11,8 @@
     "search": {
         "heading": "See our <span>menu</span><br />and place <span>your order</span>",
         "inputLabel": "Search dishes by ingredients",
-        "inputPlaceholder": "es. Rice, Chicken, tomato, banana..."
+        "inputPlaceholder": "es. Rice, Chicken, tomato, banana...",
+        "mostSearched": ["Rice", "Chicken", "Tomato", "Banana"]
     },
     "cart": {
         "buttonLabel": "Your order"

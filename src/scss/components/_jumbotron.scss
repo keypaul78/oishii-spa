@@ -1,32 +1,157 @@
 .header {
   position: relative;
   z-index: 1;
+  height: 56px;
   &__sx,
   &__dx {
-    width: auto;
-    flex-shrink: 0;
   }
   &__cx {
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
   }
 
   &__sx {
     @extend .d-flex;
-    @extend .flex-wrap;
     @extend .items-end;
+    min-width: 0;
     width: 60%;
     h3 {
       @extend .mb-0;
       @extend .ff-roboto;
+      position: absolute;
+      left: 148px;
+      top: 24px;
+      white-space: nowrap;
+      transform-origin: left;
+      transition: opacity 400ms $easing-fast-out-slow-in,
+        transform 400ms $easing-fast-out-slow-in;
     }
   }
 
   @include mq(md) {
     &__sx {
       width: auto;
+      overflow: visible;
+
       h3 {
-        margin-left: 0.5rem;
+        // margin-left: 0.5rem;
       }
     }
+  }
+}
+
+.category,
+.cart,
+.search,
+.ingredient {
+  .header__sx {
+    h3 {
+      opacity: 0;
+      transform: scale(0.85);
+    }
+  }
+
+  .header__cx {
+    .welcome {
+      transform: translateY(0%);
+      touch-action: auto;
+      pointer-events: all;
+      opacity: 1;
+    }
+  }
+}
+
+.jumbotron {
+  height: 296px;
+  overflow: hidden;
+  transition: height 400ms $easing-fast-out-slow-in;
+  width: calc(100% - 4rem);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background: $white;
+
+  .header__cx {
+    .welcome {
+      transform: translateY(-100%);
+      touch-action: none;
+      pointer-events: none;
+      opacity: 0;
+      width: 75%;
+      transition: opacity 400ms $easing-fast-out-slow-in,
+        transform 400ms $easing-fast-out-slow-in;
+    }
+  }
+
+  .welcome--message {
+    transition: opacity 400ms $easing-fast-out-slow-in,
+      transform 400ms $easing-fast-out-slow-in;
+  }
+
+  .wrap-categories-chips {
+    display: none;
+  }
+
+  .bg--welcome {
+    transition: opacity 400ms $easing-fast-out-slow-in,
+      transform 400ms $easing-fast-out-slow-in;
+  }
+}
+
+.category,
+.cart,
+.search,
+.ingredient {
+  .jumbotron {
+    height: 128px;
+    overflow: hidden;
+    transition: height 400ms $easing-fast-out-slow-in;
+
+    .header__cx {
+      .welcome {
+        transform: translateY(0%);
+        touch-action: auto;
+        pointer-events: all;
+        opacity: 1;
+      }
+    }
+
+    .welcome--message {
+      opacity: 0;
+      transform: translateY(20%);
+    }
+
+    .bg--welcome {
+      opacity: 0;
+      transform: translateY(45%) translateX(10%) scale(0.5);
+    }
+  }
+}
+
+.category {
+  .jumbotron {
+    .wrap-categories-chips {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 0 !important;
+      z-index: 3;
+
+      .row,
+      .col-12 {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.search {
+  .jumbotron {
+    height: 72px;
   }
 }

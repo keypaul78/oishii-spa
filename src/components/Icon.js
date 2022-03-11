@@ -4,6 +4,7 @@ import Image from './Image';
 //comps
 //styles
 //data
+import fields from '../data/content.json';
 
 class Icon extends React.Component {
   constructor(props) {
@@ -12,7 +13,7 @@ class Icon extends React.Component {
   }
 
   render() {
-    const iconPath = `./assets/images/icons/${this.props.iconName}.svg`;
+    const iconPath = `${fields.basePath}/assets/images/icons/${this.props.iconName}.svg`;
     const classes = `icon ${this.props.classes}`;
 
     return (

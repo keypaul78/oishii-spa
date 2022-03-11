@@ -11,16 +11,19 @@ class Categories extends React.Component {
   async componentDidMount() {
     const response = await api.get('/categories.php');
     this.setState({ categories: response.data.categories });
-    console.log(this.state.categories);
+    //console.log(this.state.categories);
   }
 
   render() {
     return (
-      <div className="container pt-5">
+      <div className={`container pt-5 wrap-categories-${this.props.mode}`}>
         <div className="row">
           <div className="col-12">
-            <h4>{fields.category.heading}</h4>
-            <CategoriesList categories={this.state.categories} />
+            {!this.props.mode ? <h4>{fields.category.heading}</h4> : null}
+            <CategoriesList
+              categories={this.state.categories}
+              displayMode={this.props.mode}
+            />
           </div>
         </div>
       </div>

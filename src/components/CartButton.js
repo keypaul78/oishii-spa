@@ -1,5 +1,6 @@
 //libs
 import React from 'react';
+import { Link } from 'react-router-dom';
 //comps
 //styles
 //data
@@ -13,12 +14,12 @@ class CartButton extends React.Component {
 
   render() {
     return (
-      <a href="/cart" className="button button--cart">
+      <Link to={'/cart'} className="button button--cart">
         <strong>{fields.cart.buttonLabel}</strong>
         <div className="button--cart__amount">
           <span>0</span>
         </div>
-      </a>
+      </Link>
     );
   }
 }

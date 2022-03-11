@@ -9,15 +9,15 @@ body {
   @extend .ff-roboto;
 }
 
-.main {
-  @extend .d-flex;
-  flex-direction: column;
-  flex: 1 0 auto;
-  &::after {
-    content: '';
-    display: block;
-    height: 0px;
-    visibility: hidden;
+main {
+  transition: padding-top 400ms $easing-fast-out-slow-in;
+  &.home {
+    padding-top: 296px;
+  }
+  &.category,
+  &.ingredients,
+  &.cart {
+    padding-top: 160px;
   }
 }
 

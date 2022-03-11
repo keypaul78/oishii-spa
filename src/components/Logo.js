@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Logo = () => {
   return (
-    <a href="/">
+    <Link to="/">
       <svg
         width="136"
         height="48"
@@ -22,7 +23,7 @@ const Logo = () => {
         <ellipse cx="42" cy="10" rx="4" ry="5" fill="#1c1c1c" />
         <ellipse cx="17" cy="31" rx="4" ry="5" fill="#1c1c1c" />
       </svg>
-    </a>
+    </Link>
   );
 };
 
